@@ -1,0 +1,20 @@
+{
+  "name": "suning",
+  "version": "1.0.0",
+  "description": "this is an shopping city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MixinBeliever/suning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MixinBeliever/suning/issues"
+  },
+  "homepage": "https://github.com/MixinBeliever/suning#readme"
+}
