@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/MixinBeliever/suning/issues"
   },
-  "homepage": "https://github.com/MixinBeliever/suning#readme"
+  "homepage": "https://github.com/MixinBeliever/suning#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^4.0.2",
+    "gulp.spritesmith": "^6.9.0"
+  },
+  "dependencies": {
+    "gulp-uglify": "^3.0.1"
+  }
 }
