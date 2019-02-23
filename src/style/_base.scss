@@ -1,3 +1,18 @@
-h3{
-    
-}
+/*======================================PC端样式重置==============================================*/
+/*========================================清样式==================================================*/
+body,h1,h2,h3,h4,h5,h6,a,p,img,input,ul,ol,dl,li,dd,dt,figure,form,fieldset,legend{margin: 0;padding: 0;}
+header,nav,main,article,section,aside,footer,figure,figcaption,details,summary{display: block;}
+					        /*新标签在低版本浏览器默认识别为内联元素，需要转块*/
+img{display: block; border: 0;}                      /*低版本浏览器里面，图片加超链接会出现border */
+input{outline: none;border: none;}                                             /* 表单蓝色外围轮廓*/
+ul,ol{list-style: none;}                                                            /*清除列表符号*/
+/*===================================第二步：定义全局样式=========================================*/
+body{font-size: 12px; font-family: "微软雅黑";color: #333333;}
+/*===================================第san步：清除超链接样式======================================*/
+a{text-decoration: none;color: #666;}
+a:visited { color:#666; }
+a:hover, a:active, a:focus { color:#ff8400; }
+/*===================================第四步：定义公共样式=========================================*/
+.w{width: 1190px;margin: 0 auto;}
+.l{float: left;}
+.r{float: right;}

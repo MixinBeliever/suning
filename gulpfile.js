@@ -55,7 +55,7 @@ gulp.task('other_js',other_js)
 
 //拷贝imgs下的所有图片
 function img(){
-     return gulp.src('./src/resource/img/**/*.jpg')
+     return gulp.src('./src/resource/img/**/*.{jpg,png}')
                .pipe(gulp.dest('./dist/resource/img'))
 }
 gulp.task('img',img)
@@ -72,7 +72,7 @@ gulp.task('copy',copy)
 
 //生成精灵图
 function sprite(){
-     return gulp.src('./src/resource/icon/**/*.{png}')
+     return gulp.src('./src/resource/icon/**/*.png')
                .pipe(spritesmith({
                     imgName: 'sprite.png',
                     cssName: 'sprite.css'
@@ -90,7 +90,7 @@ function sass(){
                     //outputStyle:'expanded'      //扩展的 相当于正常模式下
                     // outputStyle: 'compressed'  //精简 相当于2行压缩代码
                }))
-               .pipe(gulp.dest('./dist/style'))
+               .pipe(gulp.dest('./dist/css'))
 }
 gulp.task('sass',sass)
 
