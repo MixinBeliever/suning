@@ -975,8 +975,8 @@ div.flash_sale{
                             }
                         }
                         p.percentage{
+                            margin: 0 0 0 5px;
                             font-size: 12px;
-                            margin-left: 5px;
                             float: left;
                             color: #333;
 
@@ -1214,9 +1214,7 @@ div.main_must{
                                 float: left;
                                 width: 265px;
                                 padding-left: 10px;
-                                p{
-                                    
-                                }
+                               
                                 p.name{
                                     margin-top: 5px;
                                     height: 40px;
@@ -1556,10 +1554,169 @@ div.videos{
             height: 260px;
             width: 590px;
             float: right;
-            background: tomato;
+            div.big_video{
+                width: 424px;
+                height: 240px;
+                background: #fff;
+                padding: 10px;
+                float: left;
+                ul{
+                    li{
+                        position: absolute;
+                       a{
+                           img{
+                               width: 424px;
+                               height: 240px;;
+                           }
+                           span.iconfont{
+                               width: 50px;
+                               height: 50px;
+                               font-size: 50px;
+                               color: rgba(000,000,000,0.1);
+                               position: absolute;
+                               top: 50%;
+                               left: 50%;
+                               margin-left:-25px;
+                               margin-top: -25px; 
+                               z-index: 5;
+                           }
+                           span.iconfont:hover{
+                               color: rgba(000,000,000,0.3);
+                           }
+                           div.down_intro{
+                               width: 424px;
+                               height: 120px;
+                               position: absolute;
+                               bottom: 0;
+                               
+                               p.bg_video{
+                                   text-align: center;
+                                   font-size: 18px;
+                                   color: #ffffff;
+                                   line-height: 20px;
+                                   font-weight: bold;
+                                   margin-top: 60px;
+                               }
+                           }
+                       } 
+                    }
+                    i{
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 80px;
+                        height: 24px;
+                    }
+                }
+            }
+            ul.right_small_video{
+                width: 136px;
+                height: 240px;
+                float: left;
+                padding: 10px 10px 10px 0;
+                background: #fff;
+                li{
+                    width: 136px;
+                    height: 76px;
+                    margin-bottom: 6px;
+                    a{
+                        display: block;
+                        height: 76px;
+                        width: 136px;
+                        position: relative;
+                        img{
+                            height: 76px;
+                            width: 136px;
+                        }
+                        span.iconfont{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            font-size: 25px;
+                            width: 25px;
+                            height: 25px;
+                            transform: translate(-50%,-50%);
+                        }
+                        p{
+                            width: 100%;
+                            padding: 0 5px;
+                            text-align: center;
+                            font-size: 12px;
+                            color: #fff;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            position: absolute;
+                            bottom: 5px;
+                        }
+                    }
+                    
+                }
+            }
         }
         div.img_area_last{
+            width: 590px;
+            height: 260px;
+            float: left;
+            margin-top: 10px;
+            ul{
+                height: 530px;
+                width: 600px;
+                li{
+                    width: 290px;
+                    height: 260px;
+                    float: left;
+                    background: #fff;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    a{
+                        display: block;
+                        width: 290px;
+                        height: 260px;
+                        position: relative;
+                        img.big_after{
+                            width: 270px;
+                            height: 240px;
+                            margin: 10px;
+                        }
+                        img.small_before{
+                            width: 150px;
+                            height: 150px;
+                            position: absolute;
+                            top: 10px;
+                            left: 50%;
+                            margin-left: -75px;
 
+                        }
+                        div.text-area{
+                            position: absolute;
+                            bottom: 10px;
+                            width: 270px;
+                            height: 80px;
+                            text-align: center;
+                            margin: 0 10px;
+                            p.title{
+                                font-size: 18px;
+                                color: #fff;
+                                font-weight: bold;
+                            }
+                            i.line{
+                                width: 50px;
+                                height: 4px;
+                                background: #fff;
+                                display: inline-block
+
+                            }
+                            p.desc{
+                                line-height: 20px;
+                                margin-top: 5px;
+                                font-size: 14px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
