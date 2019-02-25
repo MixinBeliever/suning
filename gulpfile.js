@@ -55,7 +55,7 @@ gulp.task('other_js',other_js)
 
 //拷贝imgs下的所有图片
 function img(){
-     return gulp.src('./src/resource/img/**/*.{jpg,png}')
+     return gulp.src('./src/resource/img/**/*.{jpg,png,ico}')
                .pipe(gulp.dest('./dist/resource/img'))
 }
 gulp.task('img',img)
