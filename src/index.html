@@ -149,12 +149,13 @@
                 <h1><a href="javascript:;">苏宁</a></h1>
                 <div class="search">
                     <form>
-                        <input class="se_input" id= "input_search" type="text" placeholder="请输入...">
-                        <input class="sub_input" type="submit" value="搜索" >
+                        <input class="se_input" id= "input_search" type="text" placeholder="请输入..." autocomplete="off">
+                        <input class="sub_input" id="btn_search" type="button" value="搜索" >
                     </form>
                     <div class="history_search" id="history_box">
-                        <ul class="his_left">
-                            <li>最近搜索</li>
+                        <ul class="his_left" id="search_history">
+                            <li class="need">最近搜索</li>
+                           
                         </ul>
                         <ul class="his_right">
                             <li class="need">正在热搜中<span id="close">X</span></li>
@@ -826,6 +827,454 @@
         </div>
     </div>
 
+    <div class="middle-three-img">
+        <div class="w">
+            <a href="javascript:;"><img src="./resource/img/middle_img (1).jpg" alt=""></a>
+            <a href="javascript:;"><img src="./resource/img/middle_img (4).jpg" alt=""></a>
+            <a href="javascript:;"><img src="./resource/img/middle_img (3).jpg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="big_floor">
+        <div class="w">
+            <div class="floor left-floor">
+                <div class="title">
+                    <div class="title-left">
+                        <span></span>
+                        <p>热门手机</p>
+                        <img src="./resource/img/small_ew_code (1).png" alt="">
+                    </div>
+                    <div class="title-right">
+                        <a href="javascript:;">正品好店</a>
+                        <a href="javascript:;">手机周边</a>
+                        <a href="javascript:;">手机维修</a>
+                        <a href="javascript:;">以旧换新</a>
+                        <a href="javascript:;">号卡宽带</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-left">
+                        <img src="./resource/img/phone (1).jpg" alt="">
+                        <div class="over-hook"></div>
+                        <p class="img-name">小米9新品开售</p>
+                        <p class="img-desc">iPhone XR下单低至5288</p>
+                        <a href=""></a> 
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p class="content-name">红米Note7</p>
+                                <p class="content-intro">新品22日抢购</p>
+                                <img src="./resource/img/phone-sml (1).jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="content-name">荣耀V20</p>
+                                <p class="content-intro">稀缺新品限量抢</p>
+                                <img src="./resource/img/phone-sml (2).jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="content-name">爆款手机</p>
+                                <p class="content-intro">领券立减100元</p>
+                                <img src="./resource/img/phone-sml (3).jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="content-name">vivo U1</p>
+                                <p class="content-intro">799元火热预约</p>
+                                <img src="./resource/img/phone-sml (4).jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-list">
+                    <ul class="bottom-list">
+                        <li class="bottom-list-li">
+                            <a href="">
+                                <div class="float_left">
+                                    <p class="name">Mate20</p>
+                                    <p class="xinxi">6期免息</p>
+                                </div>
+                                <div class="float_right">
+                                    <img src="./resource/img/content-bot-sml (1).jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="bottom-list-li">
+                            <a href="">
+                                <div class="float_left">
+                                    <p class="name">OPPO R17</p>
+                                    <p class="xinxi">享12期免息</p>
+                                </div>
+                                <div class="float_right">
+                                    <img src="./resource/img/content-bot-sml (2).jpg" alt="">
+                                 </div>
+                            </a>
+                        </li>
+                        <li class="bottom-list-li">
+                            <a href="">
+                                <div class="float_left">
+                                    <p class="name">三星A8s</p>
+                                    <p class="xinxi">享6期免息</p>
+                                </div>
+                                <div class="float_right">
+                                    <img src="./resource/img/content-bot-sml (3).jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="brand-logo">
+                    <ul>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (1).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (2).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (3).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (4).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (5).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (6).jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor right-floor">
+                <div class="title">
+                    <div class="title-left">
+                        <span></span>
+                        <p>热门手机</p>
+                        <img src="./resource/img/small_ew_code (3).png" alt="">
+                    </div>
+                    <div class="title-right">
+                        <a href="javascript:;">正品好店</a>
+                        <a href="javascript:;">手机周边</a>
+                        <a href="javascript:;">手机维修</a>
+                        <a href="javascript:;">以旧换新</a>
+                        <a href="javascript:;">号卡宽带</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-left">
+                        <img src="./resource/img/phone (2).jpg" alt="">
+                        <div class="over-hook"></div>
+                        <p class="img-name">小米9新品开售</p>
+                        <p class="img-desc">iPhone XR下单低至5288</p>
+                        <a href=""></a> 
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p class="content-name">红米Note7</p>
+                                <p class="content-intro">新品22日抢购</p>
+                                <img src="./resource/img/phone-sml (5).jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="content-name">荣耀V20</p>
+                                <p class="content-intro">稀缺新品限量抢</p>
+                                <img src="./resource/img/phone-sml (6).jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="content-name">爆款手机</p>
+                                <p class="content-intro">领券立减100元</p>
+                                <img src="./resource/img/phone-sml (7).jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="content-name">vivo U1</p>
+                                <p class="content-intro">799元火热预约</p>
+                                <img src="./resource/img/phone-sml (8).jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-list">
+                    <ul class="bottom-list">
+                        <li class="bottom-list-li">
+                            <a href="">
+                                <div class="float_left">
+                                    <p class="name">Mate20</p>
+                                    <p class="xinxi">6期免息</p>
+                                </div>
+                                <div class="float_right">
+                                    <img src="./resource/img/content-bot-sml (4).jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="bottom-list-li">
+                            <a href="">
+                                <div class="float_left">
+                                    <p class="name">OPPO R17</p>
+                                    <p class="xinxi">享12期免息</p>
+                                </div>
+                                <div class="float_right">
+                                    <img src="./resource/img/content-bot-sml (5).jpg" alt="">
+                                    </div>
+                            </a>
+                        </li>
+                        <li class="bottom-list-li">
+                            <a href="">
+                                <div class="float_left">
+                                    <p class="name">三星A8s</p>
+                                    <p class="xinxi">享6期免息</p>
+                                </div>
+                                <div class="float_right">
+                                    <img src="./resource/img/content-bot-sml (6).jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="brand-logo">
+                    <ul>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (7).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (8).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (9).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (10).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (11).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (12).jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="single">
+        <div class="w">
+            <a href="javascript:;">
+                <img src="./resource/img/single_big.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="one_floor">
+        <div class="w">
+            <div class="title">
+                <div class="title-left">
+                    <span></span>
+                    <p>热门手机</p>
+                    <img src="./resource/img/small_ew_code (8).png" alt="">
+                </div>
+                <div class="title-right">
+                    <a href="javascript:;">正品好店</a>
+                    <a href="javascript:;">手机周边</a>
+                    <a href="javascript:;">手机维修</a>
+                    <a href="javascript:;">以旧换新</a>
+                    <a href="javascript:;">号卡宽带</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-left">
+                    <img src="./resource/img/phone (2).jpg" alt="">
+                    <div class="over-hook"></div>
+                    <p class="img-name">小米9新品开售</p>
+                    <p class="img-desc">iPhone XR下单低至5288</p>
+                    <a href=""></a> 
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p class="content-name">红米Note7</p>
+                            <p class="content-intro">新品22日抢购</p>
+                            <img src="./resource/img/phone-sml (5).jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="content-name">荣耀V20</p>
+                            <p class="content-intro">稀缺新品限量抢</p>
+                            <img src="./resource/img/phone-sml (6).jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="content-name">爆款手机</p>
+                            <p class="content-intro">领券立减100元</p>
+                            <img src="./resource/img/phone-sml (7).jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="content-name">vivo U1</p>
+                            <p class="content-intro">799元火热预约</p>
+                            <img src="./resource/img/phone-sml (8).jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <a class="one_floor_a" href="javascript:;">
+                    <p class="name">厨卫春季家装节</p>
+                    <p class="news">抢1000元装修基金</p>
+                    <img src="./resource/img/onefloor_a_img (1).jpg" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p class="content-name">红米Note7</p>
+                            <p class="content-intro">新品22日抢购</p>
+                            <img src="./resource/img/phone-sml (5).jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="content-name">荣耀V20</p>
+                            <p class="content-intro">稀缺新品限量抢</p>
+                            <img src="./resource/img/phone-sml (6).jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="content-name">爆款手机</p>
+                            <p class="content-intro">领券立减100元</p>
+                            <img src="./resource/img/phone-sml (7).jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="content-name">vivo U1</p>
+                            <p class="content-intro">799元火热预约</p>
+                            <img src="./resource/img/phone-sml (8).jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="brand-logo">
+                    <ul>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (7).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (8).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (9).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (10).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (11).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (12).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (7).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (8).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (9).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (10).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (11).jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./resource/img/bottom_phone (12).jpg" alt=""></a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="guess_hobby">
+        <div class="w">
+            <div class="guess_title "><span></span><p>猜你喜欢</p></div>
+            <div class="items">
+                <ul class="clearfix">
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (1).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li>
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (2).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li>
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (3).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li>
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (4).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li>
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (5).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li>   
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (6).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li>
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (7).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li>
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (8).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li> 
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (9).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li> 
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (10).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li> 
+                    <li>
+                        <a class="product" href="javascript:;">
+                            <img src="./resource/img/items/items (11).jpg" alt="">
+                            <p class="title"><i class="icon-ziying"></i>农夫山泉天然饮用水5L*4 整箱装</p>
+                            <p class="price"><i>¥</i><span>39.90</span></p>
+                            <p class="cxIcon"><span>拼购</span></p>
+                        </a>
+                        <a class="similar" href="">找相似</a>
+                    </li>       
+                </ul>
+                <p class="end_over">
+                    <span class="line_left"></span>
+                    END
+                    <span class="line_right"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/JQuery/jquery-3.3.1.min.js"></script>
     <script>
         var count = 0;
@@ -835,7 +1284,6 @@
         var prev = $('.prev');
         var next = $('.next');
         var id;
-        console.log(lis_count);
         function sliderTo(index){
             if(index > lis_count -1){
                 index = 0 ;
@@ -845,7 +1293,6 @@
                 index = lis_count - 1;
                 count = lis_count - 1;
             }
-            console.log(index);
             $('li.point_cur').removeClass('point_cur');
             $('.point_lists li').eq(index).addClass('point_cur');
             $('.banner li.cur').removeClass('cur');
@@ -889,7 +1336,6 @@
 //左边的ul
         var header_lis = $('ul.l li.first_lay');
         header_lis.hover(function(){
-            console.log($(this)[0])
             $(this)[0].style.borderBottom = '1px solid #fff;';
             $(this).find('div.two_menu').slideDown(500);
         }, function () {
@@ -898,7 +1344,6 @@
 //右边的ul
         var header_right_lis = $('ul.r li.right_lis');
             header_right_lis.hover(function () {
-                console.log($(this)[0])
                 $(this)[0].style.borderBottom = '1px solid #fff;';
                 $(this).find('div:first').slideDown(500);
             }, function () {
@@ -922,6 +1367,63 @@
             $('#history_box').hide();
         })
 
+//nav部分cookie存储
+        var search_arr  
+        if(localStorage.getItem('search_list')){
+            search_arr =JSON.parse(localStorage.getItem('search_list'));
+        }else{
+            search_arr = [];
+        }
+        $('#btn_search').click(function(){
+            console.log('aa');
+            var entry_value = $('#input_search').val();
+            entry_value  =   entry_value.replace(/^\s+|\s+$/g,"");
+            if(entry_value !== ''){
+                var confident = search_arr.indexOf(entry_value);
+                if(confident !== -1){
+                    search_arr.splice(confident,1);
+                }
+                search_arr.unshift(entry_value);
+                if(search_arr.length >= 7){
+                search_arr.length = 7;
+            }
+                localStorage.setItem('search_list',JSON.stringify(search_arr));  
+            }
+        })
+        $('#input_search').focus(function(){
+            $('#search_history li:not(".need")').remove();
+            var search_value =JSON.parse(localStorage.getItem('search_list'));
+            if(search_value==''){
+                return;
+            }
+            console.log(search_arr.length);
+            for(var i = 0; i< search_value.length;i++){
+                var li = $('<li></li>');
+                li.html(search_value[i]+'<span class="liqing" >X</span>');
+                li.appendTo('#search_history');
+            }
+        })
+        $('#search_history').on('click','.liqing',function(){
+            console.log('???')
+            $(this).parents('li').remove();
+            var del_v = $(this)[0].previousSibling.nodeValue;
+            console.log(del_v);
+            var search_value =JSON.parse(localStorage.getItem('search_list'));
+            console.log(search_value);
+            var confident = search_value.indexOf(del_v);
+                if(confident !== -1){
+                    search_value.splice(confident,1);
+                }
+            search_arr = search_value;    
+            localStorage.setItem('search_list',JSON.stringify(search_value));
+        })
+        $('#search_history').on('click',function(){
+            console.log('啦啦')
+            $('#input_search').val($(this)[0].childNodes[0].nodeValue); 
+            $('#history_box').hide();
+        })
+        
+        
         
 
         
