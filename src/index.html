@@ -1403,7 +1403,7 @@
                 li.appendTo('#search_history');
             }
         })
-        $('#search_history').on('click','.liqing',function(){
+        $('#search_history').on('click','.liqing',function(evt){
             console.log('???')
             $(this).parents('li').remove();
             var del_v = $(this)[0].previousSibling.nodeValue;
@@ -1416,11 +1416,14 @@
                 }
             search_arr = search_value;    
             localStorage.setItem('search_list',JSON.stringify(search_value));
+            evt.stopPropagation();
         })
-        $('#search_history').on('click',function(){
+        console.log($('#search_history li'))
+        $('#search_history').on('click','li:not(".need")',function(evt){
             console.log('啦啦')
             $('#input_search').val($(this)[0].childNodes[0].nodeValue); 
             $('#history_box').hide();
+            evt.stopPropagation();
         })
         
         
