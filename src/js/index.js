@@ -265,3 +265,93 @@ first_toggle.style.left = toggle_W*-toggle_index +'px';
 }
 
 //必抢清单
+  //你抢清单
+  var must_seize_ul = document.querySelector('.must_seize_ul');
+  var symbol = document.querySelector('.tao_ul');
+  var symbol_W = symbol.offsetWidth;
+  var lis = document.querySelectorAll('.must_seize_ul li');
+  var lis_length = lis.length;
+  //must_dotted
+  var lis_dotted = document.querySelectorAll('ul.must_dotted li');
+
+  for(var dotted_i = 0; dotted_i<lis_dotted.length;dotted_i++){
+      lis_dotted[dotted_i].yyy = dotted_i;
+      lis_dotted[dotted_i].onmouseover = function(){
+          document.querySelector('li.dotted.cur').className = 'dotted';
+          this.className = 'dotted cur';
+          console.log(this.yyy);
+          toggleTo(this.yyy);
+      }
+  }
+
+  console.log(symbol_W);
+  //must_seize_ul
+  var must_seize_index = 0;
+
+  var dottedObj = {
+      '-1': 2,
+      '1' : 1,
+      '2' : 2,
+      '3' : 0,
+      '0' : 0,
+      '4' : 1
+  }
+  console.log(dottedObj[0])
+  function toggleTo(index){
+      console.log(index)
+      document.querySelector('li.dotted.cur').className = 'dotted';
+      lis_dotted[dottedObj[index]].className = 'dotted cur';
+      if(index < 0){
+          index = lis_length - 1;
+          must_seize_ul.style.transitionDuration = '0s';
+          must_seize_ul.style.left = symbol_W * -index + 'px';
+          setTimeout(function(){
+              index = lis_length -2;
+              must_seize_index = index;
+              must_seize_ul.style.transitionDuration = '';
+              must_seize_ul.style.left = symbol_W * -index + 'px';
+          },16)
+          return;
+      }
+      if(index == lis_length){
+          index = 0;
+          must_seize_ul.style.transitionDuration = '0s';
+          must_seize_ul.style.left = symbol_W * -index + 'px';
+          setTimeout(function(){
+              index = 1;
+              must_seize_index = index;
+              must_seize_ul.style.transitionDuration = '';
+              must_seize_ul.style.left = symbol_W * -index + 'px';
+          },16)
+          return;
+      }
+      
+      must_seize_ul.style.left = symbol_W * -index + 'px';
+  }
+  document.querySelector('div.prevbtn').onclick = function(){
+      must_seize_index--;
+      toggleTo(must_seize_index);
+  }
+  document.querySelector('div.nextbtn').onclick = function(){
+      must_seize_index++;
+      toggleTo(must_seize_index);
+  }
+
+  var toggle_id;
+  function autoToggle(){
+      toggle_id = setInterval(function(){
+          must_seize_index++;
+          toggleTo(must_seize_index);
+      },3000)
+  }
+  autoToggle();
+  function stopToggle(){
+      clearInterval(toggle_id);
+  }
+
+  $(lis).mouseover(function(){
+      stopToggle();
+  })
+  $(lis).mouseout(function(){
+      autoToggle();
+  })
